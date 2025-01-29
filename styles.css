@@ -1,6 +1,7 @@
 :root {
     background-color: rgb(232, 222, 214);
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(44, 38, 30);
 }
 
 header {
@@ -25,4 +26,10 @@ img {
 
 ul {
     padding-left: 350px;
+}
+
+#welcome {
+    font-size: 1.2em;
+    background-color: rgba(172, 197, 209, 0.735);
+    padding: 5px;
 }
