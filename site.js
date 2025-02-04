@@ -15,3 +15,13 @@ else if (hours = isAfternoon) {
     const welcome = document.querySelector('#welcome')
     welcome.textContent = "Good Evening!"
 }
+
+//assignment 4
+const key = "It's a secret to everybody."
+
+localStorage.setItem(key, 'Zelda?')
+
+const buttonHide = document.querySelector('#hide')
+buttonHide.addEventListener('click', () => {
+    localStorage.removeItem(key)
+})

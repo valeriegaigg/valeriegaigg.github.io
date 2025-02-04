@@ -33,3 +33,11 @@ ul {
     background-color: rgba(172, 197, 209, 0.735);
     padding: 5px;
 }
+
+button {
+    background-color: blue;
+    color: white;
+}
+button:hover {
+    background-color: black;
+}
