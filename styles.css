@@ -3,6 +3,11 @@
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(44, 38, 30);
 }
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 header {
     background-color: rgb(44, 38, 30);
@@ -12,9 +17,6 @@ header {
 }
 
 #about {
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 10px;
 }
 
@@ -40,4 +42,32 @@ button {
 }
 button:hover {
     background-color: black;
+}
+
+#carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+#carousel img {
+    max-height: 300px;
+    aspect-ratio: auto 300 / 400;
+    border-radius: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+section:nth-of-type(3) {
+    margin-top: 50px;
 }
