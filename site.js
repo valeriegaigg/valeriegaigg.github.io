@@ -66,3 +66,46 @@ setInterval(() => {
     currentImage--
     showImages()
 }, 5000)
+
+
+//assignment 6 
+
+const buttonAdd = document.querySelector('#add')
+const input = document.querySelector('#new-todo')
+const todoList = document.querySelector('.todo-list')
+
+//Get the list from local storage
+const todos = JSON.parse(localStorage.getItem('todo-list')) || []
+
+const renderTodos = () => {
+
+    todoList.innerHTML = ''
+    
+    // Create and add new list items to the DOM
+    todos.forEach(({text}) => {
+        const li = document.createElement('li')
+        li.textContent = text
+        todoList.append(li)
+    })
+
+} 
+renderTodos()
+
+buttonAdd.addEventListener('click', () => {
+    // Add a new item to the list
+    todos.push({ text: input.value, completed: false })
+
+    // Save the list to local storage
+    localStorage.setItem('todo-list', JSON.stringify(todos))
+
+    renderTodos()
+
+    input.value = ''
+    input.focus()
+})
+
+
+
+
+
+

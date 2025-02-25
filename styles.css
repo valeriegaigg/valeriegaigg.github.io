@@ -71,3 +71,26 @@ button:hover {
 section:nth-of-type(3) {
     margin-top: 50px;
 }
+
+
+#list {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(172, 197, 209, 0.735);
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#list h3 {
+    text-align: left;
+    margin-left: 20px;
+}
+#list ul {
+    clear: both;
+}
+#addNew {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
