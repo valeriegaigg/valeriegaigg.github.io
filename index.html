@@ -56,6 +56,52 @@
         </ul>
     </section>
 
+
+    <script>
+
+                async function  getRandomPokemon() {
+
+                        try {
+
+                            const url = 'https://pokeapi.co/api/v2/pokemon/' + Math.floor(Math.random() * 150)
+                            const response = await fetch(url)
+                            const data = await response.json()
+                            
+                            
+                            return data
+                            
+                                
+                        } catch (error){
+                            console.log(error)
+                        }   
+                    
+                }
+                getRandomPokemon()
+
+                console.log( await getRandomPokemon)
+
+                               
+                const renderPokemon = () => {
+                                    const div = document.querySelector('#pokemon')
+                                    const img = document.createElement('img')
+                                    img.src = data.sprites.front_default
+                                    img.alt = 'pokemon'
+                                    div.append(img)
+                                }
+
+                                renderPokemon()
+
+
+                renderPokemon()
+              
+    </script>
+
+
+
+    <div id="pokemon">
+        
+
+    </div>
     
     
 </body>
